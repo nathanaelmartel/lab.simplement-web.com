@@ -8,40 +8,14 @@ if (isset($_SERVER['REQUEST_URI'])) {
 
 $nav = array(
     array(
-        'url' => '',
-        'name' => 'Compétences',
+        'url' => '/generate',
+        'name' => 'Générateurs',
         'childs' => array(
-            '/integration-developpement-frontend' => 'UI et UX',
-            '/devoloppment-web' => 'Modélisation',
-            '/ergonomie-accessibilite' => 'Audit qualité web',
-            '/presence-en-ligne' => 'Présence en ligne',
+            '/generate/password' => 'Mot de passe',
+        //    '/generate/html' => 'faut text HTML',
+        //    '/generate/html-table' => 'table HTML',
+        //    '/generate/html-list' => 'liste HTML',
         ),
-    ),
-    array(
-        'url' => '/technologies',
-        'name' => 'Technologies',
-        'childs' => array(
-            '/technologies/api' => 'API et manipulation de données',
-            '/technologies/responsive' => 'Responsive',
-            '/technologies/donnees-structurees' => 'Données structurées',
-        ),
-    ),
-    array(
-        'url' => '/projets',
-        'name' => 'Projets',
-        'childs' => array(
-            '/projets/sepa' => 'Automatisation de processus (SEPA)',
-            '/projets/processus' => 'Tableau de bord de gestion (Processus)',
-            '/projets/statistiques' => 'Tableau de bord de gestion (Statistiques)',
-        ),
-    ),
-    array(
-        'url' => '/references',
-        'name' => 'Clients',
-    ),
-    array(
-        'url' => '/contact',
-        'name' => 'Contact',
     ),
 );
 

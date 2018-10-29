@@ -3,7 +3,7 @@
 
   <head>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/_head.php') ?>
-    <title>Contact - Nathanaël Martel - simplement Web</title>
+    <title>Générateur de mots de passe</title>
 
   </head>
   <body>
