@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="77.544197mm"
+   height="49.241234mm"
+   viewBox="0 0 77.544197 49.241234"
+   version="1.1"
+   id="svg910"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="logo-blanc.svg">
+  <defs
+     id="defs904" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-1170.6026"
+     inkscape:cy="-175.51713"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata907">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-61.76956,-54.665098)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:100%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:1.92087507px;word-spacing:0px;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="124.42936"
+       y="94.441498"
+       id="text817-7-0-71-6-1"><tspan
+         sodipodi:role="line"
+         x="124.42936"
+         y="94.441498"
+         style="font-size:50.79999924px;fill:#00ff00;fill-opacity:1;stroke-width:0.26458332px"
+         id="tspan833-5-6-2-5-8">}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.24608898px;line-height:100%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:2.22266603px;word-spacing:0px;fill:#111111;fill-opacity:1;stroke:none;stroke-width:0.30615222px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="76.294991"
+       y="94.149651"
+       id="text839-6-2-1-63-7"><tspan
+         sodipodi:role="line"
+         id="tspan837-2-6-08-0-9"
+         x="76.294991"
+         y="94.149651"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.12499046px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;fill:#111111;fill-opacity:1;stroke-width:0.30615222px">web</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:100%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:1.92087507px;word-spacing:0px;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="59.73756"
+       y="94.508331"
+       id="text817-3-2-7-1-2-2"><tspan
+         sodipodi:role="line"
+         x="59.73756"
+         y="94.508331"
+         style="font-size:50.79999924px;fill:#00ff00;fill-opacity:1;stroke-width:0.26458332px"
+         id="tspan833-6-7-9-3-07-0">{ </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.16192341px;line-height:100%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:1.84438944px;word-spacing:0px;fill:#111111;fill-opacity:1;stroke:none;stroke-width:0.25404808px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="75.762184"
+       y="72.581512"
+       id="text827-0-2-48-4-2"><tspan
+         sodipodi:role="line"
+         x="75.762184"
+         y="72.581512"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.48446465px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;fill:#111111;fill-opacity:1;stroke-width:0.25404808px"
+         id="tspan829-9-0-5-7-3">simplement</tspan></text>
+  </g>
+</svg>
