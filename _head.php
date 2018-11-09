@@ -40,6 +40,8 @@
             "telephone": "+33781948086",
             "url": "https://nathanaelmartel.net",
             "sameAs": [
+              "https://www.simplement-web.com/",
+              "https://nathanaelmartel.net/",
               "https://www.linkedin.com/in/nathana%C3%ABl-martel-15299753",
               "https://twitter.com/simplementNat",
               "https://github.com/nathanaelmartel",
@@ -82,10 +84,10 @@
   (function() {
     var u="https://stats.simplement-web.com/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '14']);
+    _paq.push(['setSiteId', '11']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="https://stats.simplement-web.com/piwik.php?idsite=14&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<noscript><p><img src="https://stats.simplement-web.com/piwik.php?idsite=11&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
