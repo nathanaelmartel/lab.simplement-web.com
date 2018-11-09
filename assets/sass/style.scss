@@ -155,6 +155,9 @@ header {
             padding:0;
             height:3em;
             line-height:3em;
+            display:flex;
+            justify-content: space-between;
+            position:relative;
             li {
                 list-style: none;
                 margin:0;
@@ -168,8 +171,6 @@ header {
                     }
                 }
             }
-            display:flex;
-            position:relative;
             ul {
                 display:none;
                 position:absolute;
@@ -190,6 +191,10 @@ header {
                 &:hover ul {
                     display:block;
                 }
+            }
+            img {
+                height:2.5em;
+                width:2.5em;
             }
 
         }
@@ -281,7 +286,7 @@ footer {
 
 section {
     padding:2em 1em;
-    min-height:calc(100vh - 1em - 3em - 3em - 100px);
+    min-height:calc(100vh - 3em - 3em + 5px);
     font-size:1.2em;
     line-height: 1.5;
 

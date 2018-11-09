@@ -5,7 +5,7 @@
 	<header>
         <nav>
             <label for="toggle-menu" title="menu" role="navigation"><i class="fal fa-bars"></i></label><input type="checkbox" id="toggle-menu">
-            <ul style="justify-content: space-between;">
+            <ul>
                 <?php foreach ($nav as $category):
                     $current = ($current_page == $category['url']);
                     if (isset($category['childs']) && is_array($category['childs']) && (count($category['childs']) > 0)) {
@@ -31,7 +31,7 @@
                         <?php endif ?>
                     </li>
                 <?php endforeach ?>
-                <li><a href="https://www.simplement-web.com/"><img src="/favicon.png" alt="simplement Web" style="height:2.5em;"></a></li>
+                <li><a href="https://www.simplement-web.com/" title="simplement Web"><img src="/favicon.png" alt="simplement Web"></a></li>
             </ul>
         </nav>
 
