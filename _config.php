@@ -17,6 +17,16 @@ $nav = array(
         //    '/generate/html-list' => 'liste HTML',
         ),
     ),
+    array(
+        'url' => '/website',
+        'name' => 'Site',
+        'childs' => array(
+            '/website/info' => 'Informations',
+        //    '/generate/html' => 'faut text HTML',
+        //    '/generate/html-table' => 'table HTML',
+        //    '/generate/html-list' => 'liste HTML',
+        ),
+    ),
 );
 
 function getBreadcrumb($current_page, $nav)

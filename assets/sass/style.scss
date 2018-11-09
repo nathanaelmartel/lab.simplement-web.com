@@ -170,6 +170,10 @@ header {
                         color:$simplementweb_light;
                     }
                 }
+                &:last-child {
+                    flex:auto;
+                    text-align: right;
+                }
             }
             ul {
                 display:none;

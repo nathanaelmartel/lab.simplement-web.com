@@ -1,7 +1,7 @@
 <?php
 
-require_once($_SERVER['DOCUMENT_ROOT'].'/vendor/nathanaelmartel/password.class.php');
-use NathanaelMartel\Password\Password;
+require_once($_SERVER['DOCUMENT_ROOT'].'/vendor/nathanaelmartel/Password.php');
+use simplementWeb\Password;
 
 $password = new Password();
 

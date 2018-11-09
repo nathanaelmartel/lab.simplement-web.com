@@ -1,6 +1,6 @@
 <?php
 
-namespace NathanaelMartel\Password;
+namespace simplementWeb;
 
 class Password {
 
