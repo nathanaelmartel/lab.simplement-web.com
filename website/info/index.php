@@ -47,6 +47,7 @@ $dns_types = array(
             </form>
 
             <?php if (isset($client)): ?>
+                <h2><?php echo $domain ?></h2>
                 <ul>
                     <li>Registrar&nbsp;: <a href="<?php echo $client->getRegistrarUrl() ?>"><?php echo $client->getRegistrarName() ?></a></li>
                     <li>Date de création&nbsp;: <?php echo $client->getCreationDate()->format('d/m/Y') ?></li>
