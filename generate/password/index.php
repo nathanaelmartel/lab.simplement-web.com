@@ -39,11 +39,11 @@ $password = new Password();
                         </select>
                     </p>
                         <input type="submit" value="Génerer" />
-                        <h2>
-                    <?php if (isset($_POST['length']) && isset($_POST['strength'])): ?>
-                        <?php echo $password->generate($_POST['length'], $_POST['strength']) ?>
-                    <?php endif ?>
-                    </h2>
+                        <h2><?php
+                            if (isset($_POST['length']) && isset($_POST['strength'])) {
+                                echo $password->generate($_POST['length'], $_POST['strength']);
+                            }
+                        ?></h2>
                 </fieldset>
             </form>
 
