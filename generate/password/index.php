@@ -20,6 +20,7 @@ $password = new Password();
 
         <section id="content">
 			<h1>Générateur de mots de passe</h1>
+            <h2>Passwords generator</h2>
 
             <form action="" method="POST">
                 <fieldset>
@@ -37,14 +38,12 @@ $password = new Password();
                             <option value="3" <?php if (isset($_POST['strength']) && ($_POST['strength'] == 3)): ?>selected="selected"<?php endif ?>>Lettres, chiffres et caractères spéciaux</option>
                         </select>
                     </p>
-                    <p>
                         <input type="submit" value="Génerer" />
-                    </p>
+                        <h2>
                     <?php if (isset($_POST['length']) && isset($_POST['strength'])): ?>
-                        <p>
-                            <strong><?php echo $password->generate($_POST['length'], $_POST['strength']) ?></strong>
-                        </p>
+                        <?php echo $password->generate($_POST['length'], $_POST['strength']) ?>
                     <?php endif ?>
+                    </h2>
                 </fieldset>
             </form>
 

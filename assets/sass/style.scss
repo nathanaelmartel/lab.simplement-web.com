@@ -20,7 +20,11 @@ html, body {
     margin:0;
     padding:0;
 }
-
+h1, h2, h3 {
+    content:'';
+    display:block;
+    clear:both;
+}
 .sr-only {
     border: 0;
     clip: rect(0,0,0,0);
@@ -298,12 +302,15 @@ section {
     }
     h1+h2 {
         margin-top:0;
+        font-size:1em;
+        text-align:left;
+        color:$simplementweb_grey;
     }
 
     h2 {
-        color:$simplementweb_grey;
         font-weight: normal;
-        font-size:1em;
+        font-size:1.2em;
+        text-align:center;
         &:before {
             content: '{';
             color:$simplementweb_green;
@@ -394,86 +401,6 @@ section {
     }
 }
 
-.testimonials {
-    padding:0;
-    li {
-        margin:2em 0;
-        &:before {
-            display:none;
-        }
-    }
-    blockquote {
-        margin:0;
-        &:before {
-            font-family:"Font Awesome 5 Pro";
-            font-size:1.7em;
-            line-height: 0;
-            margin-right:1em;
-            content:'\f10d';
-            color:$simplementweb_green;
-        }
-    }
-    font-family:ubuntu, "UbuntuRegular", sans-serif;
-    span {
-        font-family:"UbuntuItalic", sans-serif;
-        color:$simplementweb_grey;
-        display: block;
-        text-align:right;
-        &:before {
-            font-family:"Font Awesome 5 Pro";
-            font-size:1em;
-            line-height: 0;
-            margin-right:1em;
-            content:'\f5b7';
-            color:$simplementweb_grey;
-        }
-    }
-}
-
-.clients {
-    display:flex;
-    padding:0;
-    flex-wrap: wrap;
-    font-family:ubuntu, "UbuntuRegular", sans-serif;
-    li {
-        width:50%;
-        @media(max-width:900px) {
-            width:100%;
-        }
-        clear:both;
-        margin:1em 0;
-        padding:1em;
-        box-sizing: border-box;
-        &:before {
-            display:none;
-        }
-        img {
-            float:left;
-            height:100px;
-            margin-right:1em;
-            filter: grayscale(100%);
-            transition:all .5s ease .1s;
-        }
-        &:hover img {
-            filter: grayscale(0);
-        }
-        strong {
-            display: block;
-            font-weight:normal;
-            color:$simplementweb_black;
-        }
-
-        @media(max-width:450px) {
-            img {
-                float:none;
-                margin:0 auto;
-                display: block;
-                filter:none;
-            }
-                text-align:center;
-        }
-    }
-}
 
 .competences {
     margin-left:-100px;
@@ -526,7 +453,70 @@ section {
     }
 }
 
-.badge-opquast {
-    float:left;
-    margin-right:1em;
+
+form {
+    p {
+        display:flex;
+        align-items: flex-start;
+        flex-direction: column;
+        &>* {
+            flex:1;
+            width:100%;
+        }
+        @media (min-width: 701px) {
+            flex-direction: row;
+            align-items: center;
+            &>* {
+                flex:2;
+                &:first-child {
+                    flex:1
+                }
+            }
+        }
+    }
+    fieldset {
+        border:1px solid $simplementweb_green;
+        margin:2em 0;
+        legend {
+            color:$simplementweb_grey;
+            font-weight:normal;
+            padding:0 .5em;
+        }
+    }
+    input, select, textarea {
+        padding:.5em;
+        background:#fff;
+        border:1px solid $simplementweb_green;
+        box-sizing:border-box;
+        &:hover, &:focus, &:active {
+            border-color:$simplementweb_dark;
+        }
+    }
+    input[type=submit] {
+        cursor:pointer;
+        padding:.5em 1em;
+        float:right;
+    }
+}
+
+.col-flex {
+    display:flex;
+    margin:1em 0;
+    flex-direction: column;
+    @media (min-width: 701px) {
+        flex-direction: row;
+    }
+    &>* {
+        flex:1;
+        padding:0;
+        @media (min-width: 701px) {
+            padding:1em;
+            &:first-child {
+                padding-left:0;
+            }
+            &:last-child {
+                padding-right:0;
+            }
+        }
+    }
 }
