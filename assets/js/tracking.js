@@ -1,8 +1,8 @@
 
-var idSite = 1;
+var idSite = 11;
 var piwikTrackingApiUrl = 'https://stats.simplement-web.com/piwik.php';
 
-var _paq = _paq || [];
+var _paq = window._paq || [];
 _paq.push(['setTrackerUrl', piwikTrackingApiUrl]);
 _paq.push(['setSiteId', idSite]);
 _paq.push(["setDoNotTrack", true]);
