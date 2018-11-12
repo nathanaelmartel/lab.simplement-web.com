@@ -74,7 +74,7 @@
 
 
 <!-- Matomo -->
-<script src="https://stats.simplement-web.com/piwik.js" async defer></script>
 <script src="/assets/js/tracking.js"></script>
+<script src="https://stats.simplement-web.com/piwik.js" async defer></script>
 <noscript><p><img src="https://stats.simplement-web.com/piwik.php?idsite=11&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
