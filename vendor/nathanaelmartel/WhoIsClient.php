@@ -5,6 +5,8 @@ namespace simplementWeb;
 class WhoIsClient
 {
     private $raw = null;
+    private $domain = null;
+
     private $servers = array(
         'ac' => 'whois.nic.ac',
         'ae' => 'whois.aeda.net.ae',
@@ -179,14 +181,36 @@ class WhoIsClient
 
     function __construct($domain)
     {
-        $server = $this->locateServer($domain);
+        $this->domain = $domain;
+        $this->cleanDomain();
+        $server = $this->locateServer();
 
-        $this->raw = $this->makeRequest($server, $domain);
+        $this->raw = $this->makeRequest($server);
     }
 
-    private function locateServer($domain)
+    private function cleanDomain()
     {
-        $parts = explode('.', $domain);
+        $domain = str_replace('https', '', $this->domain);
+        $domain = str_replace('http', '', $domain);
+        $domain = trim($domain, ' :/');
+
+        $domain_pieces = explode('.', $domain);
+        $domain = $domain_pieces[count($domain_pieces)-2].'.'.$domain_pieces[count($domain_pieces)-1];
+
+        $domain_pieces = explode('/', $domain);
+        $domain = $domain_pieces[0];
+
+        $this->domain = $domain;
+    }
+
+    public function getDomain()
+    {
+        return $this->domain;
+    }
+
+    private function locateServer()
+    {
+        $parts = explode('.', $this->domain);
 
         for ($i = 0, $l = count($parts); $i < $l; $i++) {
             $root = implode('.', $parts);
@@ -198,11 +222,13 @@ class WhoIsClient
             array_shift($parts);
         }
 
-        throw new \UnexpectedValueException('Unknown TLD in domain ' . $domain);
+        throw new \UnexpectedValueException('Unknown TLD in domain ' . $this->domain);
     }
 
-    private function makeRequest($server, $domain)
+    private function makeRequest($server)
     {
+        $domain = $this->domain;
+
         $sock = stream_socket_client("tcp://$server:43", $errNo, $errStr, 3);
         if (!$sock) {
             throw new \RuntimeException('Unable to connect to WHOIS server at ' . $server . ':43');
