@@ -22,9 +22,15 @@ $nav = array(
         'name' => 'Site',
         'childs' => array(
             '/website/info' => 'Informations',
-        //    '/generate/html' => 'faut text HTML',
-        //    '/generate/html-table' => 'table HTML',
-        //    '/generate/html-list' => 'liste HTML',
+        ),
+    ),
+    array(
+        'url' => '/prettyprint',
+        'name' => 'Pretty Print',
+        'childs' => array(
+            '/prettyprint/json' => 'Json',
+            '/prettyprint/html' => 'HTML',
+            '/prettyprint/base64' => 'base64',
         ),
     ),
 );
