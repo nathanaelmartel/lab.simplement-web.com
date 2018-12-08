@@ -13,6 +13,7 @@ if (isset($_POST['json'])) {
   <head>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/_head.php') ?>
     <title>Json Pretty Print</title>
+    <link href="/vendor/prism/prism.css" rel="stylesheet" />
 
   </head>
   <body>
@@ -27,17 +28,18 @@ if (isset($_POST['json'])) {
             <form action="" method="POST">
                 <fieldset>
                     <legend>Json</legend>
-                    <p><textarea name="json" id="json" cols="30" rows="10" required ></textarea></p>
+                    <p><textarea name="json" id="json" cols="30" rows="10" required ><?php echo json_encode($nav) ?></textarea></p>
                     <input type="submit" value="Pretty Print" />
                 </fieldset>
             </form>
 
             <?php if (isset($_POST['json'])): ?>
-                <pre><?php echo json_encode(json_decode($_POST['json']), JSON_PRETTY_PRINT) ?></pre>
+                <pre class="code language-javascript"><code><?php echo json_encode(json_decode($_POST['json']), JSON_PRETTY_PRINT) ?></code></pre>
             <?php endif ?>
 	    </section>
 
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/_footer.php') ?>
+    <script src="/vendor/prism/prism.js"></script>
 
 
 

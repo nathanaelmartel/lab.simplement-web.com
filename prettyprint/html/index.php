@@ -22,7 +22,7 @@ if (isset($_POST['html'])) {
   <head>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/_head.php') ?>
     <title>Tidy HTML</title>
-
+    <link href="/vendor/prism/prism.css" rel="stylesheet" />
   </head>
   <body>
 
@@ -42,12 +42,12 @@ if (isset($_POST['html'])) {
             </form>
 
             <?php if (isset($_POST['html'])): ?>
-                <pre><?php echo htmlentities($tidy); ?></pre>
+                <pre class="code language-html"><code><?php echo htmlentities($tidy); ?></code></pre>
             <?php endif ?>
 	    </section>
 
-    <?php require_once($_SERVER['DOCUMENT_ROOT'].'/_footer.php') ?>
-
+        <?php require_once($_SERVER['DOCUMENT_ROOT'].'/_footer.php') ?>
+        <script src="/vendor/prism/prism.js"></script>
 
 
       </body>
