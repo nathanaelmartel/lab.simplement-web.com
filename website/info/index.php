@@ -28,7 +28,7 @@ $dns_types = array(
 
   <head>
     <?php require_once $_SERVER['DOCUMENT_ROOT'].'/_head.php'; ?>
-    <title>Générateur de mots de passe</title>
+    <title>Website info</title>
 
   </head>
   <body>
@@ -38,7 +38,7 @@ $dns_types = array(
 
         <section id="content">
 			<h1>Website info</h1>
-            <h2><a href="https://github.com/nathanaelmartel/lab.simplement-web.com/blob/master/vendor/nathanaelmartel/WhoIsClient.php" target="_blank">Registrar</a>, DNS, <a href="https://github.com/nathanaelmartel/lab.simplement-web.com/blob/master/vendor/nathanaelmartel/FetchFavicons.php" target="_blank">Fetch favicons</a>…</h2>
+            <h2><a href="https://github.com/nathanaelmartel/lab.simplement-web.com/blob/master/vendor/nathanaelmartel/WhoIsClient.php" target="_blank">Registrar</a>, dns_get_record(), <a href="https://github.com/nathanaelmartel/lab.simplement-web.com/blob/master/vendor/nathanaelmartel/FetchFavicons.php" target="_blank">Fetch favicons</a>…</h2>
 
             <form action="" method="POST">
                 <fieldset>
