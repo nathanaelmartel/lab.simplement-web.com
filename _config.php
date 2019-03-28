@@ -1,9 +1,9 @@
 <?php
 
 if (isset($_SERVER['REQUEST_URI'])) {
-  $current_page = rtrim($_SERVER['REQUEST_URI'], '/');
+    $current_page = rtrim($_SERVER['REQUEST_URI'], '/');
 } else {
-  $current_page = '';
+    $current_page = '';
 }
 
 $nav = array(
@@ -12,6 +12,7 @@ $nav = array(
         'name' => 'Générateurs',
         'childs' => array(
             '/generate/password' => 'Mot de passe',
+            '/generate/minifyphp' => 'Minify PHP',
         //    '/generate/html' => 'faut text HTML',
         //    '/generate/html-table' => 'table HTML',
         //    '/generate/html-list' => 'liste HTML',
@@ -31,6 +32,7 @@ $nav = array(
             '/prettyprint/json' => 'Json',
             '/prettyprint/html' => 'HTML',
             '/prettyprint/base64' => 'base64',
+            '/prettyprint/timestamp' => 'timestamp',
         ),
     ),
 );
