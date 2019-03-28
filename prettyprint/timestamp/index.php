@@ -29,7 +29,7 @@ if (isset($_POST['timestamp']) && isset($_POST['encode'])) {
             <form action="" method="POST">
                 <fieldset>
                     <legend>Text</legend>
-                    <p><input type="text" name="timestamp" value="<?php echo isset($_POST['timestamp']) ? $_POST['timestamp'] : ''; ?>"></p>
+                    <p><input type="text" name="timestamp" value="<?php echo isset($_POST['timestamp']) ? $_POST['timestamp'] : time(); ?>"></p>
                     <input type="submit" name="decode" value="Get the date" />
                     <input type="submit" name="encode" value="Get the timestamp" />
                 </fieldset>

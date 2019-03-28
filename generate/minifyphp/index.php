@@ -24,7 +24,7 @@ if (isset($_POST['minify'])) {
 
         <section id="content">
 			<h1>Minification de PHP</h1>
-            <h2>MinifyPhp</h2>
+            <h2><a href="https://github.com/nathanaelmartel/lab.simplement-web.com/blob/master/vendor/nathanaelmartel/MinifyPhp.php" target="_blank">MinifyPhp</a></h2>
 
             <form action="" method="POST">
                 <fieldset>
